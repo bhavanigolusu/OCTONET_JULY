@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoDelight: A Chocolate Lover's Paradise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"
+/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#types">Types of Chocolate</a></li>
+                <li><a href="#products">Our Products</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-text">
+            <h1>Welcome to ChocoDelight</h1>
+            <p>Indulge in the Sweetness of Life</p>
+            <button onclick="scrollToSection('types')">Explore More</button>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <section id="types">
+        <h2>Types of Chocolate</h2>
+        <div class="chocolate-types">
+            <div class="chocolate-type">
+                <img src="darkchocolate.webp" alt="Dark Chocolate">
+                <h3>Dark Chocolate</h3>
+                <p>Rich and intense, dark chocolate is a favorite among chocolate enthusiasts.</p>
+            </div>
+            <div class="chocolate-type">
+                <img src="milkchocolate.jpeg" alt="Milk Chocolate">
+                <h3>Milk Chocolate</h3>
+                <p>Sweet and creamy, milk chocolate is perfect for a delightful treat.</p>
+            </div>
+            <div class="chocolate-type">
+                <img src="whitechocolate.jpg" alt="White Chocolate">
+                <h3>White Chocolate</h3>
+                <p>Sweet and smooth, white chocolate is a unique and delicious choice.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="bars.jpg" alt="Chocolate Bar">
+                <h3>Chocolate Bar</h3>
+                <p>A classic chocolate bar that melts in your mouth.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="chocolatetruffles.jpeg" alt="Chocolate Truffles">
+                <h3>Chocolate Truffles</h3>
+                <p>Decadent truffles with a rich chocolate filling.</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="chocolatecake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Moist and delicious chocolate cake for any occasion.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="recipes">
+        <h2>Recipes</h2>
+        <div class="recipes">
+            <div class="recipe">
+                <h3>Chocolate Brownies</h3>
+                <p>Rich and fudgy brownies that are perfect for chocolate lovers.</p>
+                <a href="recipes/brownies.pdf" download>Download Recipe</a>
+            </div>
+            <div class="recipe">
+                <h3>Chocolate Cake</h3>
+                <p>A classic chocolate cake recipe that's easy to make.</p>
+                <a href="recipes/chocolate-cake.pdf" download>Download Recipe</a>
+            </div>
+            <div class="recipe">
+                <h3>Chocolate Truffles</h3>
+                <p>Decadent truffles with a rich chocolate filling.</p>
+                <a href="recipes/truffles.pdf" download>Download Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At ChocoDelight, we are passionate about creating the finest chocolates for our customers. Our journey began in a small kitchen, and today, we are proud to share our love for chocolate with the world.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Address: 123 Chocolate Lane, Sweet City, CA 90210</p>
+            <p>Phone: 123..</p>
+            <p>Email: contact@chocodelight.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ChocoDelight. All rights reserved.</p>
+        <div class="social-media">
+            <i class="ri-facebook-box-fill"></i>
+            <i class="ri-instagram-fill"></i>
+            <i class="ri-twitter-fill"></i>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
